@@ -1,0 +1,8 @@
+{
+  "findQuery": {
+    "scope": "java",
+    "prefix": "findBy",
+    "description": "Custom repository queries",
+    "body": ["findBy${1:ColumnName}"]
+  }
+}
