@@ -44,6 +44,11 @@
     "description": "Query database column based on its starting/prefix value",
     "body": "Type<T> findBy${1:Column}StartingWith(S entity)"
   },
+  "Postfix Column Query": {
+    "prefix": "findByPostfix",
+    "description": "Query database column based on its ending/postfix value",
+    "body": "Type<T> findBy${1:Column}EndingWith(S entity)"
+  },
   "Between Number Query": {
     "prefix": "findByBetween",
     "description": "Query database column based on being in a range",
