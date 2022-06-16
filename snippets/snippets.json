@@ -1,8 +1,62 @@
 {
-  "findQuery": {
-    "scope": "java",
-    "prefix": "findBy",
-    "description": "Custom repository queries",
-    "body": ["findBy${1:ColumnName}"]
+  "Single Column Query": {
+    "prefix": "findByColumn",
+    "description": "Query from a database column field",
+    "body": "Type<T> findBy${1:Column}(S entity)"
+  },
+  "Conjunction Column Query": {
+    "prefix": "findByColumnsAnd",
+    "description": "Conjunction query from database columns ",
+    "body": "Type<T> findBy${1:Column}And${2:Column}(S entity)"
+  },
+  "Disjunction Column Query": {
+    "prefix": "findByColumnsOr",
+    "description": "Conjunction query from database columns ",
+    "body": "Type<T> findBy${1:Column}Or${2:Column}(S entity)"
+  },
+  "Similar Column Query": {
+    "prefix": "findByLike",
+    "description": "Query database column from similarity",
+    "body": "Type<T> findBy${1:Column}Like(S entity)"
+  },
+  "Not Similar Column Query": {
+    "prefix": "findByNotLike",
+    "description": "Query database column from difference",
+    "body": "Type<T> findBy${1:Column}NotLike(S entity)"
+  },
+  "OrderBy Column Query": {
+    "prefix": "findByOrder",
+    "description": "Query database column and order by column",
+    "body": "Type<T> findBy${1:Column}OrderBy${2:Column}${3:Desc}(S entity)"
+  },
+  "Positive Polarity Column Query": {
+    "prefix": "findByTrue",
+    "description": "Query database column based on its boolean polarity",
+    "body": "Type<T> findBy${1:Column}True()"
+  },
+  "Negative Polarity Column Query": {
+    "prefix": "findByFalse",
+    "description": "Query database column based on its boolean polarity",
+    "body": "Type<T> findBy${1:Column}False()"
+  },
+  "Prefix Column Query": {
+    "prefix": "findByPrefix",
+    "description": "Query database column based on its starting/prefix value",
+    "body": "Type<T> findBy${1:Column}StartingWith(S entity)"
+  },
+  "Between Number Query": {
+    "prefix": "findByBetween",
+    "description": "Query database column based on being in a range",
+    "body": "Type<T> findBy${1:Column}Between(Integer ${2:lower_range}, Integer ${3:upper_range})"
+  },
+  "Greater Number Query": {
+    "prefix": "findByGreater",
+    "description": "Query database column based on its greater value",
+    "body": "Type<T> findBy${1:Column}GreaterThan(Integer entity)"
+  },
+  "Less Number Query": {
+    "prefix": "findByLess",
+    "description": "Query database column based on its lesser value",
+    "body": "Type<T> findBy${1:Column}LessThan(Integer entity)"
   }
 }
