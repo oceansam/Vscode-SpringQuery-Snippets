@@ -1,20 +1,42 @@
 {
-    "name": "springquery-snippets",
-    "displayName": "SpringQuery-Snippets",
-    "description": "",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.68.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "java",
-                "path": "./snippets/snippets.code-snippets"
-            }
-        ]
-    }
+  "name": "springquery-snippets",
+  "displayName": "SpringQuery-Snippets",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.68.0"
+  },
+  "author": {
+    "name": "oceansam",
+    "url": "https://oceansam.netlify.app/"
+  },
+  "publisher": "oceansam",
+  "keywords": [
+    "springboot",
+    "snippet",
+    "complete",
+    "query",
+    "custom"
+  ],
+  "homepage": "https://github.com/oceansam/SpringQuery-Snippets",
+  "categories": [
+    "Snippets"
+  ],
+  "icon": "assets/spring.jpg",
+  "galleryBanner": {
+    "color": "#454B66",
+    "theme": "light"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oceansam/SpringQuery-Snippets"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "java",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
 }
